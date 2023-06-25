@@ -1,19 +1,40 @@
-# Arabic Stemmer
-
-![GitHub](https://img.shields.io/github/license/your-username/arabic-stemmer)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/arabic-stemmer)
-
-Arabic Stemmer is a Python class that provides stemming methods for Arabic words. Stemming is the process of reducing words to their root or base form.
+<div align="center">
+  <h1>FCIS Arabic Stemmer</h1>
+  <p>
+    <strong>A Python class for stemming Arabic words</strong>
+  </p>
+  <p>
+    A Python class that implements various stemming methods to reduce Arabic words to their root or base form.
+  </p>
+  <img src="stemming.png" alt="Stemming" width="500px">
+</div>
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
+- [Example](#example)
+- [Stemming Rules](#stemming-rules)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## Usage
+1. Ensure you have Python installed on your system.
+2. Clone the repository or download the `fcis_steamer.py` file.
 
-1. Clone the repository:
+## Example
+```python
+from fcis_steamer import FcisStemmer
 
-   ```shell
-   git clone https://github.com/your-username/arabic-stemmer.git
+def main():
+    s = FcisStemmer()
+    sentence = input("Enter a sentence: ")
+
+    stemmed_sentence = ""
+    for word in sentence.split():
+        stemmed_word = s.stem(word)
+        stemmed_sentence += stemmed_word + " "
+
+    print("Original sentence: " + sentence)
+    print("Stemmed sentence: " + stemmed_sentence.strip())
+
+if __name__ == "__main__":
+    main()
