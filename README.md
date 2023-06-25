@@ -26,7 +26,7 @@
 from fcis_steamer import FcisStemmer
 
 def main():
-    s = FcisStemmer()
+    s = fcis_stemmer()
     sentence = input("Enter a sentence: ")
 
     stemmed_sentence = ""
