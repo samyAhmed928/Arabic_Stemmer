@@ -76,3 +76,39 @@ class fcis_steamer():
                 word = word[:-len(suffix)]
                 break
         return word
+
+    def Noun_weights(self,word):
+        #new_word = word[:index_to_remove] + word[index_to_remove+1:]
+        #الوزن فاعل
+        if len(word)==4:
+            if word[1]=="ا":
+                word=word[:1]+word[2:]
+                return  word
+
+
+        # الوزن تفاعل
+        if len(word) == 5:
+            if word[0] ==  "ت" and word[2]=="ا":
+                word=word[1]+word[3:]
+        # الوزن مفعول
+        if word[0] == "م" and word[3] == "و":
+            word = word[1] + word[2]+word[4]
+        if len(word) == 6:
+            if word[0]==  "أ" or word[0]=="ا"  and word[2]=="ت" and word[4]=="ا":
+               word=word[1]+word[3]+word[5]
+            # الوزن انفعال
+            if word[0]==  "أ" or word[0]=="ا"   and word[1]=="ن" and word[4]=="ا":
+                word=word[2]+word[3]+word[5]
+            # الوزن افتعال
+
+        if len(word) == 7:
+            # الوزن استفتعال
+            if word[0]==  "أ" or word[0]=="ا"  and word[1]=="س" and word[2]=="ت" and word[5]=="ا":
+                word=word[3]+word[4]+word[6]
+        #الوزن مفعل
+        if word[0] == "م":
+            word = word[1:]
+            return word
+        return word
+
+
