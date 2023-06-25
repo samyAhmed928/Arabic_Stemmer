@@ -18,4 +18,9 @@ class fcis_steamer():
         "والله",
         "تالله",
     ]
-    
+    def remove_ALIF_LAM(self,word):
+        for al in self.Alif_lam_list:
+            if word.startswith(al):
+                word = word[len(al):]
+                break
+        return word
