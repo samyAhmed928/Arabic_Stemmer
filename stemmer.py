@@ -124,3 +124,11 @@ class fcis_steamer():
             if word[0]== "أ" and word[1]== "ن":
                 word=word[2:]
         return word
+
+    def Convert_to_past(self,word):
+        if word.startswith("يست") or word.startswith("تست") or word.startswith("نست"):
+            word= "أ" +word[1:]
+        if word.startswith("ي") or word.startswith("ت") or word.startswith("ن"):
+            word=word[1:]
+
+        return word
