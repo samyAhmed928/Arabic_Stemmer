@@ -1,12 +1,13 @@
 <div align="center">
-  <h1>FCIS Arabic Stemmer</h1>
+      <h1 style="color: aqua;">FCIS Arabic Stemmer</h1>
+
   <p>
     <strong>A Python class for stemming Arabic words</strong>
   </p>
   <p>
     A Python class that implements various stemming methods to reduce Arabic words to their root or base form.
   </p>
-  <img src="[https://www.example.com/stemming.png](https://miro.medium.com/v2/resize:fit:828/format:webp/1*jawjUxVmzZFZm3i_qgGpXg.png)" alt="Stemming" width="500px">
+
 </div>
 
 ## Table of Contents
@@ -14,7 +15,7 @@
 - [Example](#example)
 - [Stemming Rules](#stemming-rules)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Usage
 1. Ensure you have Python installed on your system.
@@ -38,6 +39,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 ## Stemming Rules
 
@@ -50,4 +52,7 @@ The `FcisStemmer` class implements the following stemming rules:
 - Conversion of future tense to past tense.
 - And more.
 
-Please refer to the source code for a detailed understanding of the implemented rules.
+
+##Contributing
+
+Contributions are welcome! If you have suggestions, bug reports, or improvements, please create an issue or submit a pull request.
