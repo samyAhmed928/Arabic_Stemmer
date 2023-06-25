@@ -159,3 +159,19 @@ class fcis_steamer():
                 word = self.remove_ast(word)
                 #print("remove_ast"+word)
         return word
+def main():
+    s = fcis_steamer()
+    r = ""
+    sentence =input()
+
+
+    x = ""
+    for w in sentence.split():
+        x = x + " " + s.stem(w)
+
+    print(r)
+    print(x)
+
+
+if __name__ == "__main__":
+    main()
