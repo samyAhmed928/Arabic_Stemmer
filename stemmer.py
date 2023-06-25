@@ -24,3 +24,10 @@ class fcis_steamer():
                 word = word[len(al):]
                 break
         return word
+
+    def LAVZ_ELGLALA(self,word):
+        for al in self.LAVZ_ELGLALA_list:
+            if word== al:
+                word="الله"
+                break
+        return word
