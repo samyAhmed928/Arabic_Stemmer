@@ -1,5 +1,5 @@
 <div align="center">
-      <h1 style="color: #ff5733">FCIS Arabic Stemmer</h1>
+      <h1 style="color: #00ffff">FCIS Arabic Stemmer</h1>
 
   <p>
     <strong>A Python class for stemming Arabic words</strong>
@@ -53,6 +53,6 @@ The `FcisStemmer` class implements the following stemming rules:
 - And more.
 
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you have suggestions, bug reports, or improvements, please create an issue or submit a pull request.
