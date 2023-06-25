@@ -132,3 +132,30 @@ class fcis_steamer():
             word=word[1:]
 
         return word
+    def stem(self,word):
+        word=self.LAVZ_ELGLALA(word)
+        if word !="الله":
+            word = self.remove_ALIF_LAM(word)
+            #print("remove_ALIF_LAM" + word)
+            word = self.remove_TaaMarbuta(word)
+            #print("remove_TaaMarbuta" + word)
+            word = self.remove_plural(word)
+            #print("remove_plural" + word)
+            if len(word)>3:
+
+                word=self.Noun_weights(word)
+                #print("Noun_weights"+word)
+                word = self.Noun_weights(word)
+                #print("Noun_weights" + word)
+                word=self.remove_future_tense_single(word)
+                #print("remove_future_tense_single" + word)
+                word = self.remove_future_tense_plural(word)
+                #print("remove_future_tense_plural"+word)
+
+                word=self.Convert_to_past(word)
+                #print("Convert_to_past" + word)
+                word=self.verb_weight(word)
+                #print("verb_weight" + word)
+                word = self.remove_ast(word)
+                #print("remove_ast"+word)
+        return word
