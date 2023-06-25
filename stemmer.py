@@ -31,3 +31,10 @@ class fcis_steamer():
                 word="الله"
                 break
         return word
+
+    def remove_TaaMarbuta(self,word):
+        for suffix in [ "هم","ه","ية", "اية", "ة"]:
+            if word.endswith(suffix):
+                word = word[:-len(suffix)]
+                break
+        return word
