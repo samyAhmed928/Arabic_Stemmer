@@ -111,4 +111,16 @@ class fcis_steamer():
             return word
         return word
 
-
+    def verb_weight(self,word):
+        if len(word)==4:
+            #افعل/أفعل/تفعل
+            if word[0]== "أ" or word[0]== "ا" or word[0]== "ت":
+                word=word[1:]
+        if len(word) == 5:
+            #افتعل
+            if word[0]== "أ" and word[2]== "ت":
+                word=word[1]+word[3:]
+            #انفعل
+            if word[0]== "أ" and word[1]== "ن":
+                word=word[2:]
+        return word
