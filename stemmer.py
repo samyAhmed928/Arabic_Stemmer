@@ -70,3 +70,9 @@ class fcis_steamer():
                        break
 
         return word
+    def remove_plural(self, word):
+        for suffix in ["ون", "ان", "ات", "ين"]:
+            if word.endswith(suffix):
+                word = word[:-len(suffix)]
+                break
+        return word
