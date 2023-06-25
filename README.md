@@ -1,11 +1,11 @@
 <div align="center">
-      <h1 style="color: aqua;">FCIS Arabic Stemmer</h1>
+      <h1 style="color: #ff5733">FCIS Arabic Stemmer</h1>
 
   <p>
     <strong>A Python class for stemming Arabic words</strong>
   </p>
   <p>
-    A Python class that implements various stemming methods to reduce Arabic words to their root or base form.
+    Stemmer is based on the idea of ​​knowing the weights of words و and aims to return them to their source.
   </p>
 
 </div>
