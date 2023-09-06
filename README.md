@@ -5,7 +5,7 @@
     <strong>A Python class for stemming Arabic words</strong>
   </p>
   <p>
-    Stemmer is based on the idea of ​​knowing the weights of words و and aims to return them to their source.
+    Stemmer is based on the idea of ​​knowing the weights of words and aims to return them to their source.
   </p>
 
 </div>
