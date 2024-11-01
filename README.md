@@ -5,7 +5,7 @@
     <strong>A Python class for stemming Arabic words</strong>
   </p>
   <p>
-    Stemmer is based on the idea of ​​knowing the weights of words and aims to return them to their source.
+    A Python class for stemming Arabic words by removing affixes and identifying morphological patterns (weights) to return words to their roots. This lightweight stemmer uses pattern recognition, without relying on dictionaries, to effectively process Arabic text for tasks like text analysis and information retrieval.
   </p>
 
 </div>
